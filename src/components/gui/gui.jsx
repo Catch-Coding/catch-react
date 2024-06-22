@@ -6,15 +6,20 @@
 
 import React from 'react';
 import MenuBar from './../menu-bar/menu-bar.jsx';
+import CodeArea from './../code-area/code-area.jsx';
 import "./gui.css";
 
 function Gui() {
     return (
         <div className="gui-container">
             <MenuBar />
-            <h1>FILL IN AS NEEDED!</h1>
+            <div className="codeContainer">
+                <CodeArea />
+            </div>
         </div>
+
+
     );
 }
 
-export default Gui
+export default Gui;
