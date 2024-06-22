@@ -3,12 +3,21 @@
     written for Catch React by H3L
     LICENSED UNDER THE GPL V3
  */
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
 
 .gui {
     text-align: center;
+    height: 100%;
 }
 
-.gui-container {
+.gui-container div {
     font-family: Arial, sans-serif;
     padding: 10px;
     height: 100%;
@@ -21,7 +30,7 @@
     height: 100%;
 }
 
-.codeContainer {
+.codeContainer div {
     flex: 1;
     display: flex;
     padding: 10px;
