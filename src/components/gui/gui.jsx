@@ -11,15 +11,17 @@ import "./gui.css";
 
 function Gui() {
     return (
-        <div className="gui-container">
-            <MenuBar />
+        <div>
+            <div className="gui-container">
+                <MenuBar/>
+            </div>
             <div className="codeContainer">
-                <CodeArea />
+                <CodeArea/>
             </div>
         </div>
 
-
     );
+
 }
 
 export default Gui;
