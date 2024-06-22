@@ -10,12 +10,11 @@ import './menu-bar.css';
 function MenuBar() {
     return (
         <nav className="menu-bar">
-            <ul>
-                <li><a href="#placeholder">New</a></li>
-                <li><a href="#placeholder">Save</a></li>
-                <li><a href="#placeholder">Open</a></li>
-                <li><a href="#placeholder">Run</a></li>
-            </ul>
+                <input type="text"></input>
+                <button>New</button>
+                <button>Save</button>
+                <button>Open</button>
+                <button>Run</button>
         </nav>
     );
 }

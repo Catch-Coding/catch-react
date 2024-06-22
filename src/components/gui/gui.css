@@ -1,0 +1,14 @@
+/*
+    gui.css
+    written for Catch React by H3L
+    LICENSED UNDER THE GPL V3
+ */
+
+.gui {
+    text-align: center;
+}
+
+.gui-container {
+    font-family: Arial, sans-serif;
+    padding: 0px;
+}
