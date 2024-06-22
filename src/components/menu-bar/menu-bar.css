@@ -1,0 +1,32 @@
+/*
+    menu-bar.css
+    written by H3L for Catch React
+    LICENSED UNDER THE GPL V3
+ */
+
+.menu-bar {
+    background-color: #333333;
+    overflow: hidden;
+}
+
+.menu-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-bar li {
+    float: left;
+}
+
+.menu-bar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu-bar li a:hover {
+    background-color: #575757;
+}
