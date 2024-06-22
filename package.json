@@ -1,0 +1,13 @@
+{
+  "name": "catch-react",
+  "version": "1.0.0",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "catch-runtime": "github:Catch-Coding/catch-runtime#main",
+  },
+  "devDependencies": {
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4"
+  }
+}
