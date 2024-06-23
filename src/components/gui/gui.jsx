@@ -18,6 +18,7 @@ function Gui() {
             <div className={"codeContainer"}>
                 <CodeArea/>
             </div>
+            <iframe id="sandbox"></iframe>
         </div>
 
     );
