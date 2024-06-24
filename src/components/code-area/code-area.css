@@ -1,7 +1,7 @@
 #codeAreaContainer {
     flex: 1;
     display: flex;
-    height: 100%;
+    height: fit-content;
     flex-direction: column;
 }
 
@@ -10,7 +10,6 @@
     padding: 10px;
     border: 1px #000;
     height: fit-content;
-    width: 20%; /* test */
     border-radius: 14px;
     box-sizing: border-box;
     font-family: monospace;
