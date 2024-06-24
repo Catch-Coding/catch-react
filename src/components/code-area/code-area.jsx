@@ -9,7 +9,7 @@ import "./code-area.css";
 function CodeArea() {
     return (
         <div id="codeAreaContainer">
-            <textarea id="codeArea" placeholder="CatchJS code goes here."></textarea>
+            <textarea id="codeArea" placeholder="CatchJS code goes here." autocorrect="off"></textarea>
         </div>
     );
 }
