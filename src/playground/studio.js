@@ -1,6 +1,7 @@
 import React from 'react';
 import { createRoot } from "react-dom/client";
-import Gui from "../components/gui/gui"
+import Gui from "../components/gui/gui";
+import Runtime from "catch-runtime";
 
 function Catch() {
     const container = document.getElementById("root");
@@ -10,3 +11,7 @@ function Catch() {
 
 
 Catch()
+
+function DebugVars() {
+  self.Runtime = Runtime;
+}
