@@ -13,10 +13,10 @@ function MenuBar({newCallback, saveCallback, openCallback, runCallback}) {
         <nav className="menu-bar">
                 <img src={LogoSvg}/>
                 <input type="text" placeholder="Project Name"></input>
-                <button onclick={newCallback||()=>{}}>New</button>
-                <button onclick={saveCallback||()=>{}}>Save</button>
-                <button onclick={openCallback||()=>{}}>Open</button>
-                <button onclick={runCallback||()=>{}}>Run</button>
+                <button onclick={newCallback}>New</button>
+                <button onclick={saveCallback}>Save</button>
+                <button onclick={openCallback}>Open</button>
+                <button onclick={runCallback}>Run</button>
         </nav>
     );
 }
