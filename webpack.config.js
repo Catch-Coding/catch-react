@@ -17,6 +17,10 @@ module.exports = {
         // exclude node_modules
         rules: [
             {
+                test: /\.svg$/,
+                type: "asset/inline"
+            },
+            {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 use: ["babel-loader"],
