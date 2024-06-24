@@ -15,13 +15,13 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: path.join(__dirname, "public", "index.html"),
             filename: "studio/index.html",
-            chunks; ["studio"],
+            chunks: ["studio"],
             title: "CatchJS Studio"
         }),
         new HtmlWebpackPlugin({
             template: path.join(__dirname, "public", "index.html"),
             filename: "index.html",
-            chunks; ["homepage"],
+            chunks: ["homepage"],
             title: "CatchJS Home"
         }),
     ],
