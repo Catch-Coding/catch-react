@@ -10,7 +10,7 @@ import './menu-bar.css';
 function MenuBar() {
     return (
         <nav className="menu-bar">
-                <input type="text"></input>
+                <input type="text" placeholder="Project Name"></input>
                 <button>New</button>
                 <button>Save</button>
                 <button>Open</button>
