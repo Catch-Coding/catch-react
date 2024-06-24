@@ -6,7 +6,7 @@
 
 import React from 'react';
 import './menu-bar.css';
-import LogoSvg from '../images/logo.svg';
+import LogoSvg from '../../images/logo.svg';
 
 function MenuBar() {
     return (
