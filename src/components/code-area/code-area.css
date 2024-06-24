@@ -9,8 +9,10 @@
     flex: 1;
     padding: 10px;
     border: 1px #000;
-    height: 100%;
+    height: fit-content;
+    width: 20%; /* test */
     border-radius: 14px;
     box-sizing: border-box;
     font-family: monospace;
+    resize: none; /* remove the annoying resize thingy */
 }
