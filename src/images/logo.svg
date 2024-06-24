@@ -1,0 +1,14 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <linearGradient y2="0" x2="1" y1="0" x1="0" id="svg_10">
+   <stop offset="0" stop-opacity="0.99609" stop-color="#ff0000"/>
+   <stop offset="1" stop-opacity="0.99219" stop-color="#5a62f4"/>
+  </linearGradient>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <text xml:space="preserve" text-anchor="start" font-family="'Oswald'" font-size="69" stroke-width="2" id="svg_4" y="96" x="26.29688" stroke="#000" fill="#FFFA8D">Catch</text>
+  <text xml:space="preserve" text-anchor="start" font-family="'Oswald'" font-size="69" stroke-width="2" id="svg_5" y="166" x="120.29688" stroke="#000" fill="#FFFA8D">JS</text>
+  <path stroke="#000" id="svg_6" d="m71.28917,109.53983c-23.47237,0 -42.49999,13.20741 -42.49999,29.5c0,16.29259 19.02762,29.5 42.49999,29.5c23.47237,0 42.49999,-13.20741 42.49999,-29.5c0,-16.29259 -19.02762,-29.5 -42.49999,-29.5zm24.52215,27.40532c-4.24298,3.38761 -10.837,4.50802 -16.62395,3.21914l-21.01899,16.77769c-2.23992,1.78616 -6.13785,1.96883 -8.71112,0.41609s-2.84522,-4.26039 -0.60823,-6.04655l21.04823,-16.79596c-2.61129,-3.78543 -1.92118,-8.45177 2.30133,-11.82111c3.99735,-3.19681 10.09718,-4.36593 15.6385,-3.39776l-8.05318,6.51947l2.63468,5.3199l7.95961,1.07372l8.07365,-6.53571c2.18728,3.68192 1.38314,8.06206 -2.64053,11.27105z" fill="url(#svg_10)"/>
+ </g>
+</svg>
