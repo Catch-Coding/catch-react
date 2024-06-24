@@ -11,16 +11,17 @@ import "./gui.css";
 
 function Gui() {
     return (
-        <div className={"gui"}>
-            <div className={"gui-container"}>
-                <MenuBar/>
-            </div>
-            <div className={"codeContainer"}>
-                <CodeArea/>
+        <>
+            <div className={"gui"}>
+                <div className={"gui-container"}>
+                    <MenuBar/>
+                </div>
+                <div className={"codeContainer"}>
+                    <CodeArea/>
+                </div>
             </div>
             <iframe id="sandbox"></iframe>
-        </div>
-
+        </>
     );
 
 }
