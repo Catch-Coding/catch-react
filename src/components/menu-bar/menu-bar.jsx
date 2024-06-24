@@ -11,9 +11,7 @@ import LogoSvg from '../../images/logo.svg';
 function MenuBar({newCallback, saveCallback, openCallback, runCallback}) {
     return (
         <nav className="menu-bar">
-                <a href="/">
-                    <img src={LogoSvg}/>
-                </a>
+                <img src={LogoSvg}/>
                 <input type="text" placeholder="Project Name"></input>
                 <button onclick={newCallback}>New</button>
                 <button onclick={saveCallback}>Save</button>
