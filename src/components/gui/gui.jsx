@@ -9,12 +9,17 @@ import MenuBar from './../menu-bar/menu-bar.jsx';
 import CodeArea from './../code-area/code-area.jsx';
 import "./gui.css";
 
+function newCallback() {};
+function saveCallback() {};
+function openCallback() {};
+function runCallback() {};
+
 function Gui() {
     return (
         <>
             <div className={"gui"}>
                 <div className={"gui-container"}>
-                    <MenuBar/>
+                    <MenuBar newCallback={newCallback} saveCallback={saveCallback} openCallback={openCallback} runCallback={runCallback}/>
                 </div>
                 <div className={"codeContainer"}>
                     <CodeArea/>
