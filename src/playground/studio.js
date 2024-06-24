@@ -10,8 +10,10 @@ function Catch() {
 }
 
 
-Catch()
+Catch();
 
 function DebugVars() {
   self.Runtime = Runtime;
 }
+
+DebugVars();
