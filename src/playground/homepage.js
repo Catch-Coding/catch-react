@@ -6,8 +6,10 @@ function Render() {
     const root = createRoot(container);
     root.render(
       <>
-        <h1>Incomplete homepage</h1>
-        <a href="studio">Just go to the studio for now</a>
+        <h1>CatchJS Homepage</h1>
+        <hr/>
+        <p>CatchJS is a WIP website for people to learn javascript.</p>
+        <a href="studio">STUDIO</a>
       </>
     );
 }
