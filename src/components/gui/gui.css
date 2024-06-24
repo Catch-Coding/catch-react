@@ -42,3 +42,7 @@ body {
     box-sizing: border-box;
     font-family: monospace;
 }
+
+#sandbox  {
+    display: none; /* used for sandboxing code only */
+}
