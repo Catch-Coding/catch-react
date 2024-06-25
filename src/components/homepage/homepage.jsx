@@ -6,10 +6,11 @@ export default function Homepage() {
   return (
     <>
       <nav>
+        <img src={LogoSvg}/>
         <a href="studio">Studio</a>
         <a href="tutorial">Tutorials</a>
       </nav>
-      <h1><img src={LogoSvg}/>CatchJS Homepage</h1>
+      <h1>CatchJS Homepage</h1>
       <hr/>
       <p>CatchJS is a WIP website that can help people learn JavaScript</p>
       <p>In the future, CatchJS will include docs, tutorials, and an advanced studio.</p>
