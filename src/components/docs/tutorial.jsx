@@ -14,7 +14,8 @@ export default function Tutorial() {
       <p>Let's explain what this code is doing. First, Ctch.print is a "function" that we use to output Hello, World! to the screen. Functions are repeatable pieces of code that let you do all sorts of things, including outputting to the screen. "Hello, World!" is a "string", a fancy name used in coding to refer to text.</p>
       <p>In this case, we pass in a value into Ctch.print by putting into the parenthesis, which are required to actually run the function.</p>
       <p>Values passed into a function are comma-separated.</p>
-      <h1 id="guessmynumber">In this section, we will be creating a game where we make the user guess a random number.</h1>
+      <h1 id="guessmynumber">Guess My Number</h1>
+      <p>In this section, we will be creating a game where we make the user guess a random number.</p>
       <p>We will first get a random number between 1 and 100 (both included), then we will ask the user for what number they guess. We will give the user 6 tries, and if the guess is wrong, we will tell the user if the guessed number was over or under. </p>
       <Code language="javascript" showLineNumbers>{code1}</Code>
       <p>Using // makes the rest of the line do nothing. This can be useful when describing what your code does.</p>
