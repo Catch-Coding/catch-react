@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import "./tableOfContents.css";
 
 const TableOfContents = () => {
   const [headings, setHeadings] = useState([]);
