@@ -4,9 +4,12 @@ import Gui from "../components/gui/gui";
 import Runtime from "catch-runtime";
 
 function Catch() {
+    const sandbox = document.createElement("iframe");
+    sandbox.id = "sandbox";
+    sandbox.style.display = "none";
     const container = document.getElementById("root");
     const root = createRoot(container);
-    root.render(<Gui/>);
+    root.render(<Gui runtime={new Runtime(sandbox)}/>);
 }
 
 
