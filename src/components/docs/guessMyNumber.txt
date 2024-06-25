@@ -4,7 +4,7 @@ const correctNumber = Ctch.randomInt(1, 100); // get a random number between 1 a
 let guesses = 0; // create a variable that we can use in our code to store things
 while (guesses < 7) { // execute the code inside curly brackets until the condition is false
   const guessed = Ctch.asNumber(Ctch.ask("Guess a number. (must be an integer between 1 and 100)"));
-  if (!Ctch.isInt(guessed) || Ctch.isNaN(guessed)) { // checks if ctch is an integer and if not, it executes the code inside the curly brackets.
+  if (!Ctch.isInt(guessed)) { // checks if ctch is an integer and if not, it executes the code inside the curly brackets.
     Ctch.alert("Please enter an integer.");
     continue; // continue means reexecute the code within the curly brackets, and recheck the condition.
   } 
