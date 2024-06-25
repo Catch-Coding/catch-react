@@ -8,6 +8,11 @@
   align-items: center;
 }
 
+#tutorial h1 a {
+  text-decoration: none;
+  color: #000;
+}
+
 #helloworld,
 #guessmynumber {
   color: #333;
