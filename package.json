@@ -23,6 +23,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "style-loader": "^4.0.0",
-    "catch-runtime": "github:Catch-Coding/catch-runtime#main"
+    "catch-runtime": "github:Catch-Coding/catch-runtime#main",
+    "react-syntax-highlighter": "^15.5.0"
   }
 }
