@@ -5,7 +5,8 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
     entry: {
       studio: "./src/playground/studio.js",
-      homepage: "./src/playground/homepage.js"
+      homepage: "./src/playground/homepage.js",
+      tutorial: "./src/playground/tutorial.js"
     },
     output: {
         filename: "[name].js",
@@ -24,6 +25,12 @@ module.exports = {
             chunks: ["homepage"],
             title: "CatchJS Home"
         }),
+        new HtmlWebpackPlugin({
+            template: path.join(__dirname, "public", "index.html"),
+            filename: "tutorial/index.html",
+            chunks: ["tutorial"],
+            title: "CatchJS Tutorials"
+        })
     ],
     module: {
         // exclude node_modules
