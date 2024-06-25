@@ -12,21 +12,18 @@ import "./gui.css";
 function newCallback() {};
 function saveCallback() {};
 function openCallback() {};
-function runCallback() {};
 
-function Gui() {
+function Gui({runtime}) {
+    function runCallback() {};
     return (
-        <>
-            <div className={"gui"}>
-                <div className={"gui-container"}>
-                    <MenuBar newCallback={newCallback} saveCallback={saveCallback} openCallback={openCallback} runCallback={runCallback}/>
-                </div>
-                <div className={"codeContainer"}>
-                    <CodeArea/>
-                </div>
+        <div className={"gui"}>
+            <div className={"gui-container"}>
+                <MenuBar newCallback={newCallback} saveCallback={saveCallback} openCallback={openCallback} runCallback={runCallback}/>
             </div>
-            <iframe id="sandbox"></iframe>
-        </>
+            <div className={"codeContainer"}>
+                <CodeArea/>
+            </div>
+        </div>
     );
 
 }
