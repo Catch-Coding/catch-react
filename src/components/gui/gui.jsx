@@ -15,7 +15,9 @@ function openCallback() {};
 
 function Gui({runtime}) {
     const codeAreaValue = useRef("");
-    function runCallback() {};
+    function runCallback() {
+        runtime.sandboxRun(codeAreaValue.current);
+    };
     return (
         <div className={"gui"}>
             <div className={"gui-container"}>
