@@ -1,0 +1,32 @@
+// this is a comment. comments do not do anything but they can describe the code
+// we will be using comments to describe things in the code.
+const correctNumber = Ctch.randomInt(1, 100); // get a random number between 1 and 100, and save it
+let guesses = 0; // create a variable that we can use in our code to store things
+while (guesses < 7) { // execute the code inside curly brackets until the condition is false
+  const guessed = Ctch.asNumber(Ctch.ask("Guess a number. (must be an integer between 1 and 100)"));
+  if (!Ctch.isInt(guessed) || Ctch.isNaN(guessed)) { // checks if ctch is an integer and if not, it executes the code inside the curly brackets.
+    Ctch.alert("Please enter an integer.");
+    continue; // continue means reexecute the code within the curly brackets, and recheck the condition.
+  } 
+  if (guessed > 100 || guessed < 1) {
+    Ctch.alert("Please enter an integer between 1 and 100.");
+    continue;
+  }
+  if (guessed > correctNumber) {
+    Ctch.alert("Your guess was too high.")
+    guesses = guesses + 1; // increases guesses by 1.
+    continue;
+  }
+
+  if (guessed < correctNumber) {
+    Ctch.alert("Your guess was too low.")
+    guesses = guesses + 1; // increases guesses by 1.
+    continue;
+  }
+
+  Ctch.alert("You won!");
+  break; // gets out of the curly brackets
+}
+if (guesses > 6) {
+  Ctch.alert("You lost. The number was " + correctNumber + ".")
+}
