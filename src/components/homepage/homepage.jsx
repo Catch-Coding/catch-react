@@ -7,6 +7,7 @@ export default function Homepage() {
     <>
       <nav>
         <a href="studio">Studio</a>
+        <a href="tutorial">Tutorials</a>
       </nav>
       <h1><img src={LogoSvg}/>CatchJS Homepage</h1>
       <hr/>
