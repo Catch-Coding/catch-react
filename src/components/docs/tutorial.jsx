@@ -1,6 +1,7 @@
 import React from "react";
 import Code from "react-syntax-highlighter";
 import code1 from "./guessMyNumber.txt";
+import "./tutorial.css";
 
 export default function Tutorial() {
   return (
