@@ -4,7 +4,7 @@
     LICENSED UNDER THE GPL V3
  */
 
-import React from 'react';
+import React, { useRef } from 'react';
 import MenuBar from './../menu-bar/menu-bar.jsx';
 import CodeArea from './../code-area/code-area.jsx';
 import "./gui.css";
@@ -14,6 +14,7 @@ function saveCallback() {};
 function openCallback() {};
 
 function Gui({runtime}) {
+    const codeAreaValue = useRef("");
     function runCallback() {};
     return (
         <div className={"gui"}>
@@ -21,7 +22,7 @@ function Gui({runtime}) {
                 <MenuBar newCallback={newCallback} saveCallback={saveCallback} openCallback={openCallback} runCallback={runCallback}/>
             </div>
             <div className={"codeContainer"}>
-                <CodeArea/>
+                <CodeArea ref={codeAreaValue}/>
             </div>
         </div>
     );
