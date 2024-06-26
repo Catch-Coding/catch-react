@@ -1,5 +1,6 @@
 import React from "react";
 import Js from "./js";
+import Spoiler from "./spoiler";
 import code1 from "./guessMyNumber.txt";
 import "./tutorial.css";
 
@@ -64,6 +65,12 @@ export default function Tutorial() {
       <p>This works due to the weirdness of JavaScript.</p>
       <Js>ctch.log(iAmAString + " x2")</Js>
       <p>This can be used to put a variable in a string.</p>
+      <Spoiler>
+        <p>Modern JavaScript has a better way of putting variables into strings: Template Literals.</p>
+        <Js>let iAmATemplateLiteral = `template literal $\{iAmAString\}`;</Js>
+        <p>IMPORTANT: do not place a value before a template literal. It doesn't matter if it's in the previous line or not, there should be a semicolon separating the value and template literal.</p>
+        <p>A value before a template literal is a different syntax.</p>
+      </Spoiler>
       <h1 id="guessmynumber"><a href="#guessmynumber">Guess My Number</a></h1>
       <hr/>
       <p>In this section, we will be creating a game where we make the user guess a random number.</p>
