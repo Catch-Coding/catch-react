@@ -10,8 +10,6 @@ import CodeArea from './../code-area/code-area.jsx';
 import { fileOpen, fileSave, supported } from "browser-fs-access";
 import "./gui.css";
 
-function newCallback() {};
-
 function Gui({runtime}) {
     const codeAreaValue = useRef("");
     const setCodeAreaValue = useRef(()=>{}); // a function to overwrite the code area's value. will be used for opening a file.
