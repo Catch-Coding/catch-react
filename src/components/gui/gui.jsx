@@ -24,7 +24,7 @@ function Gui({runtime}) {
                 <MenuBar newCallback={newCallback} saveCallback={saveCallback} openCallback={openCallback} runCallback={runCallback}/>
             </div>
             <div className={"codeContainer"}>
-                <CodeArea ref={codeAreaValue}/>
+                <CodeArea bindValue={codeAreaValue}/>
             </div>
         </div>
     );
