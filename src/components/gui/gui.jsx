@@ -36,12 +36,17 @@ function Gui({runtime}) {
                 alert("Invalid CatchJS Project File");
                 return;
             }
-            setCodeAreaValue.current(obj.code)
+            if (obj == null || typeof obj !== "object" || Array.isArray(obj)) {
+                alert("Invalid CatchJS Project File");
+                return;
+            }
+            setCodeAreaValue.current(obj.code || "");
+            set_pName.current(obj.projectName || "");
         };
         reader.readAsText(blob);
     };
     async function saveCallback() {
-        const blob = new Blob([JSON.stringify({version: "testingv1", code: codeAreaValue.current})], {type:"application/json"});
+        const blob = new Blob([JSON.stringify({version: "testingv1", code: codeAreaValue.current, projectName: pName.current})], {type:"application/json"});
         const options = {
             fileName: "ProjectFile.ctch",
             extensions: [".ctch", ".json"],
