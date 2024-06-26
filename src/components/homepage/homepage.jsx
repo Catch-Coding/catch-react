@@ -9,6 +9,7 @@ export default function Homepage() {
         <img src={LogoSvg}/>
         <a href="studio">Studio</a>
         <a href="tutorial">Tutorials</a>
+        <a href="https://discord.gg/btr8nNaWgc">Official Discord Server</a>
       </nav>
       <h1>CatchJS Homepage</h1>
       <hr/>
