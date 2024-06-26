@@ -32,7 +32,8 @@ function Gui({runtime}) {
             try {
                 obj = JSON.parse(reader.result);
             } catch(e) {
-                alert("Invalid CatchJS Project File")
+                alert("Invalid CatchJS Project File");
+                return;
             }
             setCodeAreaValue.current(obj.code)
         };
