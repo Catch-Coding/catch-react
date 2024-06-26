@@ -7,6 +7,7 @@ function Catch() {
     const sandbox = document.createElement("iframe");
     sandbox.id = "sandbox";
     sandbox.style.display = "none";
+    document.body.appendChild(sandbox);
     const container = document.getElementById("root");
     const root = createRoot(container);
     root.render(<Gui runtime={new Runtime(sandbox)}/>);
