@@ -11,10 +11,16 @@ export default function Tutorial() {
       <hr/>
       <p>Let's start off this JavaScript tutorial with a "Hello, World!" program.</p>
       <p>A "Hello, World!" program is a short piece of code that outputs Hello, World! to the screen.</p>
-      <Code language="javascript" style={dark}>Ctch.print("Hello, World!")</Code>
-      <p>Let's explain what this code is doing. First, Ctch.print is a "function" that we use to output Hello, World! to the screen. Functions are repeatable pieces of code that let you do all sorts of things, including outputting to the screen. "Hello, World!" is a "string", a fancy name used in coding to refer to text.</p>
-      <p>In this case, we pass in a value into Ctch.print by putting into the parenthesis, which are required to actually run the function.</p>
+      <Code language="javascript" style={dark}>ctch.print("Hello, World!")</Code>
+      <p>Let's explain what this code is doing. First, ctch.print is a "function" that we use to output Hello, World! to the screen. Functions are repeatable pieces of code that let you do all sorts of things, including outputting to the screen. "Hello, World!" is a "string", a fancy name used in coding to refer to text.</p>
+      <p>In this case, we pass in a value into ctch.print by putting into the parenthesis, which are required to actually run the function.</p>
       <p>Values passed into a function are comma-separated.</p>
+      <h1 id="jsbasics"><a href="#jsbasics">JavaScript Basics</a></h1>
+      <hr/>
+      <p>In this section, we will discuss the basics of JavaScript.</p>
+      <h2>Variables and Outputting Them</h2>
+      <p>In JavaScript, you sometimes will need to store certain values for use later. To do this, we can "define" a variable.</p>
+      <p>To retrieve the value stored inside the variable, we can use its name.</p>
       <h1 id="guessmynumber"><a href="#guessmynumber">Guess My Number</a></h1>
       <hr/>
       <p>In this section, we will be creating a game where we make the user guess a random number.</p>
@@ -23,7 +29,7 @@ export default function Tutorial() {
       <p>Using // makes the rest of the line do nothing. This can be useful when describing what your code does.</p>
       <p>We use "const" and "let" to respectively create a constant and a variable. Both store values, but const stores values that cannot be overwritten, and let stores values that can be overwritten.</p>
       <p>We use "while" to create a loop, which keeps executing the code inside the curly brackets as long as the condition inside the parenthesis is true.</p>
-      <p>We use the functions Ctch.randomInt to get a random number, Ctch.ask to ask the user something, Ctch.asNumber to convert the user's text response to a number, Ctch.isInt to check if an input is an integer, and Ctch.alert to show something to the user</p>
+      <p>We use the functions ctch.randomInt to get a random number, ctch.ask to ask the user something, ctch.asNumber to convert the user's text response to a number, ctch.isInt to check if an input is an integer, and ctch.alert to show something to the user</p>
       <p>Continue and break let us restart the loop and get out of the loop respectively.</p>
       <p>If we put variableName = value, then when we use variableName, value will be stored in it. This lets us increase the guesses by one.</p>
       <h1 id="comingsoon">Coming soon...</h1>
