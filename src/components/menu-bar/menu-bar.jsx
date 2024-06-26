@@ -14,6 +14,7 @@ function MenuBar({newCallback, saveCallback, openCallback, runCallback, bindName
     useEffect(()=>{
         setName.current = (newVal) => {
             ref.current = newVal;
+            bindName.current = newVal;
             setProjectName(newVal);
         }
         return () => (setName.current = () => {});
@@ -21,7 +22,7 @@ function MenuBar({newCallback, saveCallback, openCallback, runCallback, bindName
     return (
         <nav className="menu-bar">
                 <img src={LogoSvg}/>
-                <input type="text" value={ref.current} placeholder="Project Name" onChange={(e)=>(bindName.current = e.target.value, ref.current = e.target.value)}></input>
+                <input type="text" value={ref.current} placeholder="Project Name" onChange={(e)=>(ref.current = e.target.value, bindName.current = e.target.value)}></input>
                 <button onClick={newCallback}>New</button>
                 <button onClick={saveCallback}>Save</button>
                 <button onClick={openCallback}>Open</button>
