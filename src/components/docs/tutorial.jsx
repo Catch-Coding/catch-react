@@ -4,7 +4,7 @@ import Spoiler from "./spoiler";
 import code1 from "./guessMyNumber.txt";
 import "./tutorial.css";
 
-const disabled = (<h1 id="guessmynumber"><a href="#guessmynumber">Guess My Number</a></h1>
+const disabled = (<><h1 id="guessmynumber"><a href="#guessmynumber">Guess My Number</a></h1>
       <hr/>
       <p>In this section, we will be creating a game where we make the user guess a random number.</p>
       <p>We will first get a random number between 1 and 100 (both included), then we will ask the user for what number they guess. We will give the user 6 tries, and if the guess is wrong, we will tell the user if the guessed number was over or under. </p>
@@ -14,7 +14,7 @@ const disabled = (<h1 id="guessmynumber"><a href="#guessmynumber">Guess My Numbe
       <p>We use "while" to create a loop, which keeps executing the code inside the curly brackets as long as the condition inside the parenthesis is true.</p>
       <p>We use the functions ctch.randomInt to get a random number, ctch.ask to ask the user something, ctch.asNumber to convert the user's text response to a number, ctch.isInt to check if an input is an integer, and ctch.alert to show something to the user</p>
       <p>Continue and break let us restart the loop and get out of the loop respectively.</p>
-      <p>If we put variableName = value, then when we use variableName, value will be stored in it. This lets us increase the guesses by one.</p>);
+      <p>If we put variableName = value, then when we use variableName, value will be stored in it. This lets us increase the guesses by one.</p></>);
 
 export default function Tutorial() {
   return (
