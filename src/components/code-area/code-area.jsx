@@ -10,7 +10,7 @@ function CodeArea(props) {
     const { bindValue } = props;
     return (
         <div id="codeAreaContainer">
-            <textarea id="codeArea" placeholder="CatchJS code goes here." autocorrect="off" onChange={(e)=>console.log(props), bindValue.current = e.target.value}></textarea>
+            <textarea id="codeArea" placeholder="CatchJS code goes here." autocorrect="off" onChange={(e)=>(console.log(props), bindValue.current = e.target.value)}></textarea>
         </div>
     );
 }
