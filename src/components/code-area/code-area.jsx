@@ -6,10 +6,11 @@
 import React from 'react';
 import "./code-area.css";
 
-function CodeArea({ref}) {
+function CodeArea(props) {
+    const { bindValue } = props;
     return (
         <div id="codeAreaContainer">
-            <textarea id="codeArea" placeholder="CatchJS code goes here." autocorrect="off" onChange={(e)=>ref.current = e.target.value}></textarea>
+            <textarea id="codeArea" placeholder="CatchJS code goes here." autocorrect="off" onChange={(e)=>console.log(props), bindValue.current = e.target.value}></textarea>
         </div>
     );
 }
