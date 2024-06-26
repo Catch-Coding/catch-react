@@ -57,6 +57,7 @@ function Gui({runtime}) {
     }
     function newCallback() {
         setCodeAreaValue.current("");
+        set_pName.current("");
     }
     return (
         <div className={"gui"}>
