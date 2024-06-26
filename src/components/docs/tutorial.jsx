@@ -80,7 +80,7 @@ export default function Tutorial() {
       <p>This can be used to put a variable in a string.</p>
       <Spoiler>
         <p>Modern JavaScript has a better way of putting variables into strings: Template Literals.</p>
-        <Js>let iAmATemplateLiteral = `template literal {"${iAmAString}"}`;</Js>
+        <Js>{"let iAmATemplateLiteral = `template literal ${iAmAString}`"}</Js>
         <p>IMPORTANT: do not place a value before a template literal. It doesn't matter if it's in the previous line or not, there should be a semicolon separating the value and template literal.</p>
         <p>A value before a template literal is a different syntax.</p>
       </Spoiler>
