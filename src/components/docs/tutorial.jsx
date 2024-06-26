@@ -89,25 +89,19 @@ export default function Tutorial() {
       <p>You can control the flow of your program. For example, you can conditionally execute code based on a boolean, or you can execute a piece of code forever.</p>
       <h2>If Statements</h2>
       <p>Use the power of if statements to conditionally execute code.</p>
-      <Js l>{`if (iAmABoolean) {
-      ctch.log(iAmAString);
-      }`}</Js>
+      <Js l>{`if (iAmABoolean) {\n  ctch.log(iAmAString);\n}`}</Js>
       <p>if will execute the code inside the curly brackets if and only if the value inside the parenthesis is true.</p>
       <Spoiler><p>The value inside the parenthesis doesn't actually have to be true. It just has to not be "falsy". The values that are falsy are: 0, NaN (not a number), "" (an empty string), false, undefined (we will discuss later), null (we will discuss later), and 0n (we will discuss later).</p></Spoiler>
       <p>Additionally, you can use else and else if to execute code in case the condition inside the parenthesis is false.</p>
       <h2>While Statements</h2>
       <p>While statements allow you to repeatedly execute a certain piece of code "while" a condition is true.</p>
-      <Js l>{`while (iAmABoolean) {
-      ctch.log(iAmAString);
-      }`}</Js>
+      <Js l>{`while (iAmABoolean) {\n  ctch.log(iAmAString);\n}`}</Js>
       <p>while will execute code inside the curly brackets as long as the value inside the parenthesis is true.</p>
       <Spoiler><p>Read the previous spoiler, it applies here too.</p></Spoiler>
       <Spoiler>
         <p>Introducing while's eldest brother, numeric for.</p>
         <p>Numeric for loops are a more advanced form of a while loop that allows you to simplify certain operations.</p>
-        <Js l>{`for (let i = 0; i < n; i++) {
-        ctch.log(i);
-        }`}</Js>
+        <Js l>{`for (let i = 0; i < n; i++) {\n  ctch.log(i);\n}`}</Js>
         <p>Each part inside the parenthesis are separated by a semicolon, and all parts are optional. The first part is a variable definition, which can be skipped if a variable is defined elsewhere. The second part is a condition similar to the one in the while loop. The third part is a value to be evaluated. </p>
         <p>This can be used to create a loop that repeats code n number of times like in the code snippet shown.</p>
       </Spoiler>
