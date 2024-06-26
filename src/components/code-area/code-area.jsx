@@ -8,7 +8,7 @@ import "./code-area.css";
 
 function CodeArea(props) {
     const [value, setValue] = useState("");
-    const { bindValue, setValue as overwriteRef } = props;
+    const { bindValue, setValue : overwriteRef } = props;
     useEffect(()=>{
       overwriteRef.current = (newVal) => {
         bindValue.current = newVal;
