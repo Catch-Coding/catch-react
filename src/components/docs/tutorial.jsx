@@ -29,7 +29,16 @@ export default function Tutorial() {
       <Js>variableName = 42069;</Js>
       <p>If you run this code, it will overwrite the value inside variableName to become 42069.</p>
       <p>IMPORTANT: to overwrite a variable, it must first be "defined", otherwise you will receive unexpected behaviour.</p>
-      <p></p>
+      <h2>Operators</h2>
+      <p>Like in math, we can use operators on numbers.</p>
+      <Js>variableName = variableName + 69420;</Js>
+      <p>In that code snippet, we set variableName to itself plus 69420.</p>
+      <p>Additionally, you can use subtraction (-), multiplication (*), division (/), and exponentiation (**).</p>
+      <h2>Comments</h2>
+      <p>Comments allow you to write things in your code that aren't executed.</p>
+      <p>This can be used to document your code or to deactivate certain parts.</p>
+      <Js l>{"// This is a comment\n/* This is a multi\nline comment */"}</Js>
+      <p>There are two types of comments, single-line comments, and multi-line comments. Single-line comments always come at the end of a line, and anything after the // of the same line will not be executed. Multi-line comments start with /* and will keep going until you put */ at the end. Multi-line comments do not have to be multi-lined, and they do not even need to be at the end of a line.</p>
       <h1 id="guessmynumber"><a href="#guessmynumber">Guess My Number</a></h1>
       <hr/>
       <p>In this section, we will be creating a game where we make the user guess a random number.</p>
