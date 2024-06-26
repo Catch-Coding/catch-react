@@ -19,6 +19,7 @@ export default function Tutorial() {
       <h1 id="jsbasics"><a href="#jsbasics">JavaScript Basics</a></h1>
       <hr/>
       <p>In this section, we will discuss the basics of JavaScript.</p>
+      <p>It is also recommended to be curious and do something random things to discover something new about JavaScript.</p>
       <h2>Variables and Outputting Them</h2>
       <p>In JavaScript, you sometimes will need to store certain values for use later. To do this, we can "define" a variable.</p>
       <p>To retrieve the value stored inside the variable, we can use its name.</p>
@@ -71,6 +72,12 @@ export default function Tutorial() {
         <p>IMPORTANT: do not place a value before a template literal. It doesn't matter if it's in the previous line or not, there should be a semicolon separating the value and template literal.</p>
         <p>A value before a template literal is a different syntax.</p>
       </Spoiler>
+      <h1 id="controlflow">Control Flow</h1>
+      <p>You can control the flow of your program. For example, you can conditionally execute code based on a boolean, or you can execute a piece of code forever.</p>
+      <h2>If Statements</h2>
+      <p>Use the power of if statements to conditionally execute code.</p>
+      <p>if will execute the code inside the curly brackets if and only if the value inside the parenthesis is true.</p>
+      <Spoiler><p>The value inside the parenthesis doesn't actually have to be true. It just has to not be "falsy". The values that are falsy are: 0, NaN (not a number), "" (an empty string), false, undefined (we will discuss later), null (we will discuss later), and 0n (we will discuss later).</p></Spoiler>
       <h1 id="guessmynumber"><a href="#guessmynumber">Guess My Number</a></h1>
       <hr/>
       <p>In this section, we will be creating a game where we make the user guess a random number.</p>
