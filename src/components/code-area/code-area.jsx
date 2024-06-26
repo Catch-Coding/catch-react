@@ -12,8 +12,8 @@ function CodeArea(props) {
     const { bindValue, setValue : overwriteRef } = props;
     useEffect(()=>{
       overwriteRef.current = (newVal) => {
-        bindValue.current = newVal;
         text.current = newVal;
+        bindValue.current = newVal;
         setValue(newVal)
       }
       return () => {
@@ -22,7 +22,7 @@ function CodeArea(props) {
     })
     return (
         <div id="codeAreaContainer">
-            <textarea id="codeArea"  value={text.current} placeholder="CatchJS code goes here." autocorrect="off" onChange={(e)=>(console.log(props), bindValue.current = e.target.value, text.current = e.target.value)}></textarea>
+            <textarea id="codeArea"  value={text.current} placeholder="CatchJS code goes here." autocorrect="off" onChange={(e)=>(console.log(props), text.current = e.target.value, bindValue.current = e.target.value)}></textarea>
         </div>
     );
 }
