@@ -39,6 +39,8 @@ export default function Tutorial() {
       <p>This can be used to document your code or to deactivate certain parts.</p>
       <Js l>{"// This is a comment\n/* This is a multi\nline comment */"}</Js>
       <p>There are two types of comments, single-line comments, and multi-line comments. Single-line comments always come at the end of a line, and anything after the // of the same line will not be executed. Multi-line comments start with /* and will keep going until you put */ at the end. Multi-line comments do not have to be multi-lined, and they do not even need to be at the end of a line.</p>
+      <h2>Strings and Booleans</h2>
+      <p>JavaScript allows you to do things involving way more things than numbers. You can use "strings", a fancy name for text, and "booleans", a fancy name for true/false, yes/no, on/off values.</p>
       <h1 id="guessmynumber"><a href="#guessmynumber">Guess My Number</a></h1>
       <hr/>
       <p>In this section, we will be creating a game where we make the user guess a random number.</p>
