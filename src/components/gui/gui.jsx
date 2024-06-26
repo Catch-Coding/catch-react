@@ -15,6 +15,7 @@ function openCallback() {};
 
 function Gui({runtime}) {
     const codeAreaValue = useRef("");
+    const setCodeAreaValue = useRef(()=>{}); // a function to overwrite the code area's value. will be used for opening a file.
     function runCallback() {
         runtime.sandboxRun(codeAreaValue.current);
     };
@@ -24,7 +25,7 @@ function Gui({runtime}) {
                 <MenuBar newCallback={newCallback} saveCallback={saveCallback} openCallback={openCallback} runCallback={runCallback}/>
             </div>
             <div className={"codeContainer"}>
-                <CodeArea bindValue={codeAreaValue}/>
+                <CodeArea bindValue={codeAreaValue} setValue={setCodeAreaValue}/>
             </div>
         </div>
     );
