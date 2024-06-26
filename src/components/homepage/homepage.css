@@ -10,3 +10,8 @@ nav a {
   font-size: 1.2rem;
   margin: 0 1rem;
 }
+
+nav img {
+  height: 60%;
+  width: 30%;
+}
