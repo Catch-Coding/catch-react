@@ -15,7 +15,8 @@ export default function Homepage() {
       <hr/>
       <p>CatchJS is a WIP website that can help people learn JavaScript</p>
       <p>In the future, CatchJS will include docs, tutorials, and an advanced studio.</p>
-      <p>Currently, the website only includes a non-functional studio and some tutorials.</p>
+      <p>Currently, the website only includes a bare-bones studio and some tutorials.</p>
+      <p>For now you can go to the <a href="studio">studio</a> or see <a href="tutorial">some tutorials</a>.</p>
     </>
   )
 }
