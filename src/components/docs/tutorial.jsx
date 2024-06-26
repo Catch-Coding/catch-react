@@ -4,6 +4,18 @@ import Spoiler from "./spoiler";
 import code1 from "./guessMyNumber.txt";
 import "./tutorial.css";
 
+const disabled = (<h1 id="guessmynumber"><a href="#guessmynumber">Guess My Number</a></h1>
+      <hr/>
+      <p>In this section, we will be creating a game where we make the user guess a random number.</p>
+      <p>We will first get a random number between 1 and 100 (both included), then we will ask the user for what number they guess. We will give the user 6 tries, and if the guess is wrong, we will tell the user if the guessed number was over or under. </p>
+      <Js l>{code1}</Js>
+      <p>Using // makes the rest of the line do nothing. This can be useful when describing what your code does.</p>
+      <p>We use "const" and "let" to respectively create a constant and a variable. Both store values, but const stores values that cannot be overwritten, and let stores values that can be overwritten.</p>
+      <p>We use "while" to create a loop, which keeps executing the code inside the curly brackets as long as the condition inside the parenthesis is true.</p>
+      <p>We use the functions ctch.randomInt to get a random number, ctch.ask to ask the user something, ctch.asNumber to convert the user's text response to a number, ctch.isInt to check if an input is an integer, and ctch.alert to show something to the user</p>
+      <p>Continue and break let us restart the loop and get out of the loop respectively.</p>
+      <p>If we put variableName = value, then when we use variableName, value will be stored in it. This lets us increase the guesses by one.</p>);
+
 export default function Tutorial() {
   return (
     <div id="tutorial">
@@ -72,7 +84,7 @@ export default function Tutorial() {
         <p>IMPORTANT: do not place a value before a template literal. It doesn't matter if it's in the previous line or not, there should be a semicolon separating the value and template literal.</p>
         <p>A value before a template literal is a different syntax.</p>
       </Spoiler>
-      <h1 id="controlflow">Control Flow</h1>
+      <h1 id="controlflow"><a href="#controlflow">Control Flow</a></h1>
       <hr/>
       <p>You can control the flow of your program. For example, you can conditionally execute code based on a boolean, or you can execute a piece of code forever.</p>
       <h2>If Statements</h2>
@@ -90,17 +102,6 @@ export default function Tutorial() {
         <p>Each part inside the parenthesis are separated by a semicolon, and all parts are optional. The first part is a variable definition, which can be skipped if a variable is defined elsewhere. The second part is a condition similar to the one in the while loop. The third part is a value to be evaluated. </p>
         <p>This can be used to create a loop that repeats n number of times like in the code snippet shown.</p>
       </Spoiler>
-      <h1 id="guessmynumber"><a href="#guessmynumber">Guess My Number</a></h1>
-      <hr/>
-      <p>In this section, we will be creating a game where we make the user guess a random number.</p>
-      <p>We will first get a random number between 1 and 100 (both included), then we will ask the user for what number they guess. We will give the user 6 tries, and if the guess is wrong, we will tell the user if the guessed number was over or under. </p>
-      <Js l>{code1}</Js>
-      <p>Using // makes the rest of the line do nothing. This can be useful when describing what your code does.</p>
-      <p>We use "const" and "let" to respectively create a constant and a variable. Both store values, but const stores values that cannot be overwritten, and let stores values that can be overwritten.</p>
-      <p>We use "while" to create a loop, which keeps executing the code inside the curly brackets as long as the condition inside the parenthesis is true.</p>
-      <p>We use the functions ctch.randomInt to get a random number, ctch.ask to ask the user something, ctch.asNumber to convert the user's text response to a number, ctch.isInt to check if an input is an integer, and ctch.alert to show something to the user</p>
-      <p>Continue and break let us restart the loop and get out of the loop respectively.</p>
-      <p>If we put variableName = value, then when we use variableName, value will be stored in it. This lets us increase the guesses by one.</p>
       <h1 id="comingsoon">Coming soon...</h1>
     </div>
   )
