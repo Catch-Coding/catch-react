@@ -41,6 +41,29 @@ export default function Tutorial() {
       <p>There are two types of comments, single-line comments, and multi-line comments. Single-line comments always come at the end of a line, and anything after the // of the same line will not be executed. Multi-line comments start with /* and will keep going until you put */ at the end. Multi-line comments do not have to be multi-lined, and they do not even need to be at the end of a line.</p>
       <h2>Strings and Booleans</h2>
       <p>JavaScript allows you to do things involving way more things than numbers. You can use "strings", a fancy name for text, and "booleans", a fancy name for true/false, yes/no, on/off values.</p>
+      <Js>{"let iAmANumber = 69420;\nlet iAmAString = \"Hello, World!\";\nlet iAmABoolean = false;\nlet isThisTutorialCool = true;"}</Js>
+      <p>As you can see, we can create a string by wrapping some text within quotes (you can use double or single), and booleans use the true/false values.</p>
+      <h3>Escaping Certain Characters</h3>
+      <p>Newlines, and quotes of the same type as the starting quote cannot be placed inside a string literally.</p>
+      <p>This is due to the way that JavaScript is executed.</p>
+      <p>To circumvent this problem, we can use escape sequences.</p>
+      <p>To use an escape sequence, put a backslash (\) before the character you want to escape.</p>
+      <p>Literal quotes and backslashes must be escaped.</p>
+      <p>Here are some additional escape sequences:</p>
+      <ul>
+        <li>\n (newline)</li>
+        <li>\r (carriage return)</li>
+        <li>\t (tab)</li>
+        <li>\b (backspace CHARACTER)</li>
+        <li>\f (form feed)</li>
+        <li>\v (vertical tab)</li>
+        <li>\0 (null character, must not be followed by another number</li>
+      </ul>
+      <h3>String Concatenation</h3>
+      <p>You can squish (or concatenate) two strings together by adding them like numbers.</p>
+      <p>This works due to the weirdness of JavaScript.</p>
+      <Js>ctch.log(iAmAString + " x2")</Js>
+      <p>This can be used to put a variable in a string.</p>
       <h1 id="guessmynumber"><a href="#guessmynumber">Guess My Number</a></h1>
       <hr/>
       <p>In this section, we will be creating a game where we make the user guess a random number.</p>
